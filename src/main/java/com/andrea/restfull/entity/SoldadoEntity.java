@@ -1,5 +1,7 @@
 package com.andrea.restfull.entity;
 
+import com.andrea.restfull.enums.Raca;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +14,7 @@ public class SoldadoEntity {
     private Long id;
     private String cpf;
     private String nome;
-    private String raca;
+    private Raca raca;
     private String arma;
     private String status;
 
@@ -40,11 +42,11 @@ public class SoldadoEntity {
         this.nome = nome;
     }
 
-    public String getRaca() {
+    public Raca getRaca() {
         return raca;
     }
 
-    public void setRaca(String raca) {
+    public void setRaca(Raca raca) {
         this.raca = raca;
     }
 
