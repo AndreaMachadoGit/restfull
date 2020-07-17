@@ -4,6 +4,8 @@ import com.andrea.restfull.controller.request.SoldadoEditRequest;
 import com.andrea.restfull.dto.Soldado;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class SoldadoService {
     public Soldado buscarSoldado(String cpf) {
@@ -22,4 +24,13 @@ public class SoldadoService {
     public void alterarSoldado(String cpf, SoldadoEditRequest soldadoEditRequest) {
 
     }
+
+    public void deletarSoldado(String cpf) {
+
+    }
+
+    public List<Soldado> findAll() {
+        return null;
+    }
+
 }
