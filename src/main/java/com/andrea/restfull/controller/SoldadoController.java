@@ -1,6 +1,5 @@
 package com.andrea.restfull.controller;
 
-
 import com.andrea.restfull.controller.request.SoldadoEditRequest;
 import com.andrea.restfull.controller.response.SoldadoListResponse;
 import com.andrea.restfull.controller.response.SoldadoResponse;
@@ -8,19 +7,14 @@ import com.andrea.restfull.dto.Soldado;
 import com.andrea.restfull.service.SoldadoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/v1/soldado")
 public class SoldadoController {
 
-    //@Autowired
     private SoldadoService soldadoService;
     private ObjectMapper objectMapper;
 
@@ -65,6 +59,5 @@ public class SoldadoController {
         //soldadoService.deletarSoldado(id);
         return ResponseEntity.ok().build();
     }
-
 
 }

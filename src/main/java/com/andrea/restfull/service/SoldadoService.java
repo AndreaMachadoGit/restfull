@@ -9,7 +9,6 @@ import com.andrea.restfull.repository.SoldadoRepository;
 import com.andrea.restfull.resource.ResourceSoldado;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.EntityModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
