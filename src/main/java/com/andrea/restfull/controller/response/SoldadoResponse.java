@@ -1,12 +1,24 @@
-package com.andrea.restfull.controller.request;
+package com.andrea.restfull.controller.response;
 
-public class SoldadoEditRequest {
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+public class SoldadoResponse {
+    private Long id;
     private String cpf;
     private String nome;
     private String raca;
     private String arma;
     private String status;
+
+    @JsonProperty("id")
+    public Long getResourceId() {
+        return id;
+    }
+
+    @JsonProperty("id")
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCpf() {
         return cpf;
@@ -47,5 +59,4 @@ public class SoldadoEditRequest {
     public void setStatus(String status) {
         this.status = status;
     }
-
 }
