@@ -15,6 +15,7 @@ public class SoldadoListResponse extends RepresentationModel {
         return id;
     }
 
+    @JsonProperty("id")
     public void setId(Long id) {
         this.id = id;
     }
